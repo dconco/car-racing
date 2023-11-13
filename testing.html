@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <title>fgg</title>
+      
+      <style>
+        .btn {
+            width: 10pc;
+            height: 5pc;
+            color: white;
+            background-color: green;
+         }
+         .move {
+            width: 10pc;
+            height: 10pc;
+            background-color: blue;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            /*animation-play-state: paused;
+            //visibility: hidden;*/
+         }
+         @keyframes move {
+            0% {left: 2pc;}
+            100% {left: 47pc;}
+         }
+
+      </style>
+
+   </head>
+   <body>
+      
+
+      <div class="move" id="move"></div>
+      <div class="btn" onclick="btn()">Start Moving</div>
+
+
+      <script>
+         //let btn = document.getElementById = "btn";
+         let move = document.getElementById = "move";
+         
+         function btn() {
+            //move.style.visibility = "visible";
+            //move.style.animationPlayState = "running";
+            //if(move.style.left == "10pc") {
+               alert("Yeah, it\'s working");
+            //}
+         }
+
+      </script>
+   </body>
+</html>

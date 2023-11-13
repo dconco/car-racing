@@ -1,0 +1,121 @@
+body, html {
+   overflow: hidden;
+   position: relative;
+   height: 100%;
+   max-width: 1300px;
+   max-height: 3000px;
+   margin: 0;
+   user-select: none;
+   -o-user-select: none;
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -o-tap-highlight-color: transparent;
+   -ms-tap-highlight-color: transparent;
+   -moz-tap-highlight-color: transparent;
+   -webkit-tap-highlight-color: transparent;
+}
+::selection, :hover, :focus, :link, :visited, :active, li {
+   outline: none;
+   text-decoration: none;
+   list-style: none;
+}
+.cover {
+   background: url("../img/cover.jpeg");
+   background-repeat: no-repeat;
+   background-position: center;
+   max-width: 1300px;
+   max-height: 3000px;
+   background-size: cover;
+   text-align: center;
+   background-attachment: fixed;
+   height: 100%;
+}
+.continue {
+   font-size: 0;
+   font-family: g;
+   position: relative;
+   text-align: center;
+   float: right;
+   display: flex;
+   top: 50%;
+   right: 5pc;
+   visibility: hidden;
+}
+@keyframes cont {
+   20% {text-shadow: 5px 4px 4px #ff0000, -5px -4px 4px #ff0000;}
+   40% {text-shadow: 5px 4px 4px #de6a00, -5px -4px 4px #de6a00;}
+   60% {text-shadow: 5px 4px 4px #ff0099, -5px -4px 4px #ff0099;}
+   80% {text-shadow: 5px 4px 4px #0041ff, -5px -4px 4px #0041ff;}
+   100% {text-shadow: 5px 4px 4px #28ff00, -5px -4px 4px #28ff00;}
+}
+a:link, a:hover, a:focus, a:active, a:visited {
+
+   text-shadow: 5px 4px 4px grey, -5px -4px 4px grey;
+   color: white;
+   text-decoration: none;
+   animation-name: cont;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+.pro {
+   text-align: center;
+   position: relative;
+   background-color: #404040;
+   display: flex;
+   border: 3px solid #000;
+   align-items: center;
+   left: 2pc;
+   top: 40%;
+   width: 80%;
+   height: 5%;
+   border-radius: 7px;
+}
+.progress {
+   background-color: #956700;
+   width: 0;
+   height: 100%;
+   border-radius: 3px;
+   font-size: 1.5pc;
+   margin: 0;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   letter-spacing: 3px;
+   color: white;
+   font-family: p;
+}
+.logo {
+   position: relative;
+   margin-left: 1pc;
+   top: -2.6pc;
+   display: flex;
+   visibility: hidden;
+}
+.speed {
+   font: 4.7pc p;
+   font-stretch: expanded;
+   letter-spacing: 2px;
+   font-weight: bolder;
+   position: relative;
+   left: 3pc;
+   text-align: left;
+   color: #001b68;
+   display: flex;
+}
+.racing {
+   font: 3.9pc g;
+   letter-spacing: 2px;
+   color: #4e0000;
+   display: flex;
+   position: relative;
+   top: 5pc;
+   left: -5.5pc;
+   float: left;
+   text-align: left;
+   -webkit-text-stroke: 1.7px white;
+   font-stretch: expanded;
+   font-weight: 900;
+   text-shadow: 4px 3px 2px grey;
+}

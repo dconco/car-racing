@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <title>Car Racing Fight Game</title>
+      <link rel="stylesheet" href="css/game.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontstyle.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontawesome/css/all.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontawesome/css/all.min.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontawesome/css/regular.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontawesome/css/regular.min.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontawesome/css/brands.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontawesome/css/brands.min.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontawesome/css/solid.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="css/fontawesome/css/solid.min.css" type="text/css" media="all" />
+      
+   </head>
+   <body onclick="load()">
+      <audio src="audio/cover.mp3" type="audio/mpeg" loop id="audio"></audio>
+      <div class="cover" id="cover">
+         
+            <!--     MESSAGE BOXES    -->
+            
+            
+            
+         <div class="garage2" id="garage2">
+            <div class="garage1">
+               <!--    BLUE CAR SELECTION    -->
+               <div class="bluecarselection">
+                  <img class="bluecarselect" src="img/blue_car_sideview.png" alt="Blue_Car_SideView" />
+               </div>
+               <div class="text">
+                  <p><i>Speed</i></p><div class="spd"><div class="spd2"></div></div>
+                  <p><i>Accuracy</i></p><div class="acc"><div class="acc2"></div></div>
+                  <p><i>Wheel</i></p><div class="whl"><div class="whl2"></div></div>
+                  <p><i>Handle</i></p><div class="hand"><div class="hand2"></div></div>
+               </div>
+               <div class="select" id="select" onclick="select()">
+                  <i class="fa-solid fa-check selectcar" id="selectcar"></i>
+               </div>
+               <div class="garageback" onclick="back()">
+                  <button class="backgarage">CLOSE</button>
+               </div>
+               
+               <!--    GREEN CAR SELECTION    -->
+               <div class="greencarselection">
+                  <img class="greencarselect" src="img/green_car_sideview.png" alt="Green_Car_SideView" />
+               </div>
+               <div class="text2">
+                  <p><i>Speed</i></p><div class="spd3"><div class="spd4"></div></div>
+                  <p><i>Accuracy</i></p><div class="acc3"><div class="acc4"></div></div>
+                  <p><i>Wheel</i></p><div class="whl3"><div class="whl4"></div></div>
+                  <p><i>Handle</i></p><div class="hand3"><div class="hand4"></div></div>
+               </div>
+               <div class="select2" id="select2" onclick="select2()">
+                  <i class="fa-solid fa-check selectcar2" id="selectcar2"></i>
+               </div>
+               <div class="carcash" id="carcash">
+                  <p class="cashnum">1000</p>
+                  <div class="carcash2" onclick="buy1()"><i class="fa fa-coins buycoin"></i>BUY</div>
+               </div>
+               
+               <!--    WHITE CAR SELECTION    -->
+               <div class="whitecarselection">
+                  <img class="whitecarselect" src="img/white_car_sideview.png" alt="White_Car_SideView" />
+               </div>
+               <div class="text3">
+                  <p><i>Speed</i></p><div class="spd5"><div class="spd6"></div></div>
+                  <p><i>Accuracy</i></p><div class="acc5"><div class="acc6"></div></div>
+                  <p><i>Wheel</i></p><div class="whl5"><div class="whl6"></div></div>
+                  <p><i>Handle</i></p><div class="hand5"><div class="hand6"></div></div>
+               </div>
+               <div class="select3" id="select3" onclick="select3()">
+                  <i class="fa-solid fa-check selectcar3" id="selectcar3"></i>
+               </div>
+               <div class="carcash3" id="carcash3">
+                  <p class="cashnum2">3000</p>
+                  <div class="carcash4" onclick="buy2()"><i class="fa fa-coins buycoin"></i>BUY</div>
+               </div>
+               
+               <!--    YELLOW CAR SELECTION    -->
+               <div class="yellowcarselection">
+                  <img class="yellowcarselect" src="img/yellow_car_sideview.png" alt="Yellow_Car_SideView" />
+               </div>
+               <div class="text4">
+                  <p><i>Speed</i></p><div class="spd7"><div class="spd8"></div></div>
+                  <p><i>Accuracy</i></p><div class="acc7"><div class="acc8"></div></div>
+                  <p><i>Wheel</i></p><div class="whl7"><div class="whl8"></div></div>
+                  <p><i>Handle</i></p><div class="hand7"><div class="hand8"></div></div>
+               </div>
+               <div class="select4" id="select4" onclick="select4()">
+                  <i class="fa-solid fa-check selectcar4" id="selectcar4"></i>
+               </div>
+               <div class="carcash5" id="carcash5">
+                  <p class="cashnum3">7000</p>
+                  <div class="carcash6" onclick="buy3()"><i class="fa fa-coins buycoin"></i>BUY</div>
+               </div>
+               
+            </div>
+         </div>   
+            
+            
+            
+            
+         <div id="setbox2" class="setbox2">
+            <div class="setbox" id="setbox">
+               <strong class="settext">SETTINGS</strong>
+               <hr  class="hr"/><br />
+               <span class="settext2">MUSIC»</span>
+               <!--    MUSIC TOGGLE BUTTON    -->
+               <div class="toggle1" id="toggle1" onclick="toggle1()">
+                  <div class="toggle2" id="toggle2">
+                     <div class="toggle3" id="toggle3"></div>
+                  </div>
+               </div>
+               
+               <span class="settext3">SOUND»</span>
+               <!--    SOUND TOGGLE BUTTON    -->
+               <div class="toggle4" id="toggle4" onclick="toggle4()">
+                  <div class="toggle2" id="toggle5">
+                     <div class="toggle3" id="toggle6"></div>
+                  </div>
+               </div>
+               <div class="buttons">
+                  <a href="https://daveconco.000webhostapp.com" target="_blank"><button class="play">HOW TO PLAY</button></a>
+                  <a href="https://daveconco.000webhostapp.com" target="_blank"><button class="dev">ABOUT DEVELOPER</button></a>
+                  <button class="setclose" id="setclose" onclick="setclose()">CLOSE</button>
+               </div>
+               
+            </div>
+         </div>
+         
+         <div id="logbox2" class="logbox2">
+            <div id="logbox" class="logbox">
+               <dl class="dls">WARNING!!!⚠️ <br /> If you logout from this Game, all your saved informations will be deleted, including the Vehicles you've bought and your coins! Are you sure to continue?</dl>
+               <a href="game.html"><button class="logoutbtn" id="logoutbtn" onclick="logoutbtn()">LOGOUT</button></a>
+               <button class="logoutcancel" id="logoutcancel" onclick="logoutcancel()">CANCEL</button>
+            </div>
+         </div>
+         
+         <div id="msgbox2" class="msgbox2" style="position:absolute;">
+            <div class="msgbox" id="msgbox">
+               <form onsubmit="return msgBox()" action="game.html">
+                  <label for="input" class="label">Enter Your Name:</label>
+                  <input type="text" name="name" class="input" id="input" value="" autocomplete="off"/>
+                  <br />
+                  <button type="submit" class="btn" id="btn">Start Game!</button>
+                  <br /><br /><br />
+                  <dl class="dl"><strong>NOTICE:: </strong>Don't forget to come back tomorrow for your daily bonuses.</dl>
+                  <p class="msg" id="msg"></p>
+               </form>
+            </div>
+         </div>
+    
+    
+           <!--     MAIN PARTS    -->
+         
+         <div class="user">
+            <i class="fa-solid fa-user-circle users" id="users" onclick="users()"></i>
+            <nav class="nav" id="nav">
+               <ul class="ul">
+                  <li id="listname" onblur="onblur()"></li>
+                  <li><a href="https://daveconco.000webhostapp.com" id="li1" target="_blank">About Dev.</a></li>
+                  <li id="li2" onclick="li2()">LOGOUT</li>
+               </ul>
+            </nav>
+         </div>
+         <div class="coins">
+            <div class="coin">
+               <div class="coin_img">
+                  <img class="coins_img" src="img/coins_thumb.png" alt="Coins_Thumbnail" />
+               </div>
+               <div class="coin_num">
+                  <span class="coins_num" id="coins_num">50</span>
+               </div>
+            </div>
+         </div>
+         
+            <div class="settings" id="settings" onclick="settings()">
+               <i class="fa fa-gear setting"></i>
+            </div>
+         
+        
+         
+         <div class="cars">
+            <img class="bluecar" id="bluecar" src="img/blue_car_sideview.png" alt="Blue_Car_SideView" />
+            <img class="greencar" id="greencar" src="img/green_car_sideview.png" alt="Green_Car_SideView" />
+            <img class="whitecar" id="whitecar" src="img/white_car_sideview.png" alt="White_Car_SideView" />
+            <img class="yellowcar" id="yellowcar" src="img/yellow_car_sideview.png" alt="Yellow_Car_SideView" />
+         </div>
+         
+         <div class="garage" onclick="garage()">
+            <i class="fa-solid fa-car cargarage"></i>
+         </div>
+         
+         <div class="playbtn" id="playbtn" onclick="playbtn()">
+            <button class="playbtns">PLAY</button>
+         </div>
+         
+      
+         
+         
+        
+        
+      
+      </div>
+         
+         
+         
+         
+         
+         
+         
+      <main class="game" id="game" onload="games()">
+         <div class="mainroad">
+            <div class="road" id="road">
+               <div class="line" id="line"></div>
+               <div class="line2" id="line2"></div>
+               <div class="line3" id="line3"></div>
+               <div class="line4" id="line4"></div>
+               <div class="bullet" id="bullet"></div>
+               
+               <div class="roadimg" id="roadimg">
+                  <img class="roadimg2" id="roadimg2" src="img/opponent_car1.png" alt="Driving_Car" />
+               </div>
+               <div class="oppcars" id="oppcars">
+                  <img class="opp1" id="opp1" src="img/opponent_car1.png" alt="Random_Cars" />
+                  <img class="opp2" id="opp2" src="img/opponent_car2.png" alt="Random_Cars2" />
+                  <img class="opp3" id="opp3" src="img/opponent_car3.png" alt="Random_Cars3" />
+               </div>
+               <div class="oppcars2" id="oppcars2">
+                  <img class="opp4" id="opp4" src="img/opponent_car4.png" alt="Random_Cars4" />
+                  <img class="opp5" id="opp5" src="img/opponent_car5.png" alt="Random_Cars5" />
+                  <img class="opp6" id="opp6" src="img/opponent_car7.png" alt="Random_Cars6" />
+               </div>
+               <div class="oppcars3" id="oppcars3">
+                  <img class="opp7" id="opp7" src="img/opponent_car8.png" alt="Random_Cars7" />
+                  <img class="opp8" id="opp8" src="img/opponent_car9.png" alt="Random_Cars8" />
+                  <img class="opp9" id="opp9" src="img/opponent_car10.png" alt="Random_Cars9" />
+               </div>
+            </div>
+         </div>
+         <div class="tools">
+            <div class="left" onclick="left()"></div>
+            <div class="center" onclick="center()"></div>
+            <div class="right" onclick="right()"></div>
+            <div class="shoot" onclick="shoot()"><i class="fa-solid fa-gun gun"></i></div>
+         </div>
+         <div class="quit" onclick="quit()">
+            <div class="quit2">
+               <i class="fa-solid fa-xmark xmark"></i>
+            </div>QUIT
+         </div>
+         <div class="timer">
+            <p id="mins">03</p><p>:</p>
+            <p id="secs">60</p><p>:</p>
+            <p id="ms">100</p>
+         </div>
+         <div class="progress" id="progress" onclick="protBlur()">
+            <div class="pro" id="pro"></div>
+            <div class="problur" id="problur"></div>
+         </div>
+         <div class="airplane" id="airplane"></div>
+      </main>
+         
+         
+        
+      <noscript>
+         <p style="color: white; font-size: 5pc;">YOU CAN'T ACCESS <br /> THIS GAME. BECAUSE <br /> THIS BROWSER DOES NOT <br /> USE JAVASCRIPT. CHANGE <br /> YOUR BROWSER TO CONTINUE!!!</p>
+      </noscript>
+      <script src="https://kit.fontawesome.com/c7378d48f0.js" crossorigin="anonymous"></script>
+      <script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+   </body>
+</html>

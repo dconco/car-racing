@@ -1,0 +1,1336 @@
+body, html {
+   overflow: hidden;
+   position: relative;
+   margin: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   max-width: 1300px;
+   max-height: 3000px;
+   user-select: none;
+   -o-overflow: hidden;
+   -ms-overflow: hidden;
+   -moz-overflow: hidden;
+   -webkit-overflow: hidden;
+   -o-user-select: none;
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -o-tap-highlight-color: transparent;
+   -ms-tap-highlight-color: transparent;
+   -moz-tap-highlight-color: transparent;
+   -webkit-tap-highlight-color: transparent;
+}
+::selection, :hover, :focus, :link, :visited, :active, li {
+   outline: none;
+   text-decoration: none;
+   list-style: none;
+}
+.cover {
+   background: url("../img/home.jpeg");
+   width: 100%;
+   height: 100%;
+   max-height: 3000px;
+   max-width: 1300px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0;
+   background-origin: padding-box;
+   background-position: center;
+   display: flex;
+   background-attachment: fixed;
+   background-clip: padding-box;
+}
+.msgbox2, .logbox2 {
+   background: #ffffff00;
+   width: 100%;
+   height: 100%;
+   max-height: 3000px;
+   max-width: 1300px;
+   background-size: cover;
+   margin: 0;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   background-origin: padding-box;
+   background-position: center;
+   display: flex;
+   background-attachment: fixed;
+   background-clip: padding-box;
+   z-index: 99;
+}
+.setbox2 {
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff00;
+   background-position: center;
+   background-size: cover;
+   background-clip: padding-box;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   z-index: 99;
+   display: flex;
+   visibility: hidden;
+}
+.garage2 {
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff00;
+   background-size: cover;
+   background-position: center;
+   position: absolute;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   display: flex;
+   z-index: 99;
+   visibility: hidden;
+}
+.garage1 {
+   width: 21pc;
+   height: 23pc;
+   border-radius: 10px;
+   box-shadow: 4px 3px 9px 2px #242424, -4px -3px 9px 2px #242424;
+   background-color: #ffffffdd;
+   background-position: center;
+   position: absolute;
+   justify-content: center;
+   text-align: center;
+   display: flex;
+   overflow-x: auto;
+   overflow-y: hidden;
+}
+.setbox {
+   background: #ffffffdd;
+   position: relative;
+   width: 20pc;
+   height: 18pc;
+   margin: 0;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   background-size: 100%;
+   background-position: center;
+   display: flex;
+   border-radius: 10px;
+   box-shadow: 4px 3px 9px 2px #242424, -4px -3px 9px 2px #242424;
+}
+.settext {
+   text-align: center;
+   justify-content: center;
+   margin: 0;
+   left: 2pc;
+   font-family: p;
+   display: flex;
+   position: relative;
+   font-size: 2pc;
+}
+.settext2 {
+   text-align: left;
+   float: left;
+   top: 4pc;
+   left: 2pc;
+   font-family: p;
+   display: flex;
+   position: absolute;
+   font-size: 2pc
+}
+.settext3 {
+   text-align: left;
+   float: left;
+   top: 7pc;
+   left: 2pc;
+   font-family: p;
+   display: flex;
+   position: absolute;
+   font-size: 2pc
+}
+.hr {
+   display: flex;
+   position: absolute;
+   text-align: center;
+   width: 90%;
+   top: 2pc;
+   height: 1.5px;
+   background-color: black;
+}
+.msgbox2 {
+   visibility: hidden;
+}
+.logbox2 {
+   visibility: hidden;
+   margin-right: 5pc;
+}
+.dls {
+   font-size: 1.5pc;
+   font-family: p;
+   display: flex;
+   position: relative;
+   top: 0;
+}
+.logbox {
+   background: #ffffffdd;
+   position: relative;
+   left: 9%;
+   width: 20pc;
+   height: 18pc;
+   margin: 0;
+   text-align: center;
+   justify-content: center;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   border-radius: 10px;
+   box-shadow: 4px 3px 9px 2px #242424, -4px -3px 9px 2px #242424;
+}
+.msgbox {
+   background: #ffffffdd;
+   width: 65%;
+   height: 50%;
+   overflow: hidden;
+   margin: 0;
+   padding: 0;
+   position: fixed;
+   justify-content: center;
+   background-size: 100%;
+   text-align: center;
+   align-items: center;
+   background-position: center;
+   display: flex;
+   box-shadow: 4px 3px 9px 2px #242424, -4px -3px 9px 2px #242424;
+}
+.label {
+   position: relative;
+   top: 1pc;
+   display: flex;
+   font-family: c;
+   font-size: 2.3pc;
+   font-weight: bolder;
+   color: #001b68;
+   justify-content: center;
+}
+.input {
+   width: 85%;
+   height: 2pc;
+   position: relative;
+   top: 20px;
+   border-radius: 20px;
+   justify-content: center;
+   background-color: #ffffff00;
+   font-size: 1.7pc;
+   font-family: p;
+   border: 2px solid #4e0000;
+   display: inline-block;
+   font-weight: normal;
+}
+.btn {
+   width: 85%;
+   height: 2.3pc;
+   position: relative;
+   top: 30px;
+   color: #4e0000;
+   border-radius: 20px;
+   background-color: #ffffff00;
+   justify-content: center;
+   font-size: 1.7pc;
+   font-family: c;
+   border: 2px solid #4e0000;
+   display: inline-block;
+   font-weight: bolder;
+}
+.btn:hover {
+   color: white;
+   background-color: #4e0000;
+}
+.dl {
+   font-size: 1.5pc;
+   font-family: p;
+   margin-top: 4px;
+   line-height: 28px;
+   justify-content: center;
+}
+.msg {
+   font-size: 1.5pc;
+   color: #af0000;
+   font-family: p;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+   display: flex;
+   position: absolute;
+   bottom: -1.5pc;
+}
+.user {
+   position: absolute;
+   text-align: left;
+   top: 1pc;
+   left: 1pc;
+   display: flex;
+   z-index: 10;
+}
+.users {
+   color: white;
+   font-size: 2.5pc;
+   display: flex;
+}
+.nav {
+   width: 0;
+   height: 2.8pc;
+   background-color: #ffffffb4;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   margin: 0;
+   position: relative;
+   margin-top: -5px;
+   border-radius: 0 10px 0 10px;
+}
+#li1, #li2, #listname {
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   right: 30px;
+   line-height: 15px;
+   font-size: 0;
+   top: 1px;
+   font-family: p;
+   text-align: center;
+   text-transform: uppercase;
+   display: flex;
+   margin: 0;
+   color: #4e0000;
+   list-style: none;
+}
+.logoutbtn, .logoutcancel {
+   width: 85%;
+   height: 2pc;
+   border: 2px solid red;
+   background-color: red;
+   position: absolute;
+   border-radius: 5px 5px 0 0;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   font-size: 1pc;
+   color: white;
+   font-weight: bolder;
+   margin: 0;
+   top: 12.5pc;
+   right: 1.5pc;
+   display: flex;
+}
+.logoutbtn:hover {
+   background-color: #4e0000;
+   border: 2px solid #4e0000;
+}
+.logoutcancel {
+   background-color: #414141;
+   border: 2px solid #212121;
+   border-radius: 0 0 5px 5px;
+   top: 14.7pc;
+}
+.logoutcancel:hover {
+   background-color: #212121;
+}
+.coins {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   top: 2.29pc;
+   left: 7.7pc;
+}
+.coin {
+   position: absolute;
+   display: flex;
+   background-color: #ffffff8b;
+   border-radius: 0 4px 4px 0;
+   width: 7.5pc;
+   height: 2pc;
+}
+.coin_img {
+   background-color: #ffffff8b;
+   width: 35%;
+   height: 100%;
+   z-index: 5;
+}
+.coins_img {
+   position: absolute;
+   display: flex;
+   width: 1.5pc;
+   top: 3px;
+   left: 8px;
+   z-index: 5;
+}
+.coins_num {
+   font: 1.5pc p;
+   left: 40%;
+   top: 5%;
+   color: black;
+   display: flex;
+   position: absolute;
+}
+.coin_num {
+   overflow-x: auto;
+   overflow-y: hidden;
+   position: absolute;
+   display: flex;
+   width: 7.5pc;
+   height: 2pc;
+}
+.settings {
+   display: flex;
+   position: absolute;
+   z-index: 12;
+   text-align: right;
+   float: right;
+   right: 1pc;
+   top: 1.3pc;
+}
+.setting {
+   font-size: 2.3pc;
+   display: flex;
+   color: white;
+   text-align: right;
+   float: right;
+   -webkit-animation: spin 2s linear infinite;
+   animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+   0% { 
+      -webkit-transform: rotate(0deg); 
+   }
+   100% {
+      -webkit-transform: rotate(360deg);
+     
+  }
+}
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% { 
+      transform: rotate(360deg);
+   }
+}
+
+.toggle1 {
+   position: relative;
+   display: flex;
+   margin-top: 4.3pc;
+   text-align: right;
+   float: right;
+   right: -50px;
+}
+.toggle2 {
+   display: flex;
+   width: 3.7pc;
+   height: 1.5pc;
+   background-color: #005c08;
+   border: 2px solid black;
+   border-radius: 15px;
+}
+.toggle3 {
+   display: flex;
+   margin: 0;
+   position: relative;
+   left: 53%;
+   width: 1.5pc;
+   height: 85%;
+   background-color: #3a8533;
+   border: 2px solid white;
+   border-radius: 90%;
+}
+.toggle4 {
+   position: absolute;
+   display: flex;
+   top: 7.5pc;
+   text-align: right;
+   float: right;
+   right: 30px;
+}
+.buttons {
+   display: flex;
+}
+.play, .dev, .setclose {
+   width: 80%;
+   height: 2pc;
+   text-align: center;
+   justify-content: center;
+   border: 2px solid #000c5a;
+   display: flex;
+   color: white;
+   background-color: #001d8e;
+   position: absolute;
+   left: 2pc;
+   font-size: 1.5pc;
+   font-weight: bolder;
+   font-family: p;
+   letter-spacing: 2px;
+}
+.play {
+   border-radius: 5px 5px 0 0;
+   top: 11pc;
+}
+.play:hover {
+   background-color: #000c5a;
+}
+.dev {
+   border-radius: 0;
+   top: 13.1pc;
+   border: 2px solid #003e04;
+   background-color: #005e08;
+}
+.dev:hover {
+   background-color: #003e04;
+}
+.setclose {
+   top: 15.2pc;
+   border: 2px solid #450000;
+   background-color: #a10000;
+   border-radius: 0 0 5px 5px;
+}
+.setclose:hover {
+   background-color: #450000;
+}
+.cars {
+   display: flex;
+   position: absolute;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   z-index: 13;
+   top: 20pc;
+}
+.bluecar {
+   width: 23pc;
+   position: relative;
+   display: flex;
+   top: -2pc;
+   visibility: visible;
+}
+.greencar {
+   width: 23pc;
+   position: absolute;
+   display: flex;
+   top: 0.5pc;
+   visibility: hidden;
+}
+.whitecar {
+   width: 23pc;
+   position: absolute;
+   top: 0.5;
+   display: flex;
+   visibility: hidden;
+}
+.yellowcar {
+   width: 25.3pc;
+   position: absolute;
+   display: flex;
+   top: 1pc;
+   right: -1.5pc;
+   visibility: hidden;
+}
+.playbtn {
+   position: relative;
+   display: flex;
+   z-index: 15;
+}
+.playbtns {
+   display: flex;
+   width: 9pc;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   height: 2.9pc;
+   background-color: #005e08;
+   border: 2px solid #003e04;
+   border-radius: 5px;
+   color: white;
+   font: 2pc p;
+   top: 31pc;
+   right: 2pc;
+   position: absolute;
+}
+.playbtns:hover {
+   background-color: #003e04;
+}
+.garage {
+   position: absolute;
+   display: flex;
+   width: 3pc;
+   height: 3pc;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: white;
+   border: 5px solid black;
+   z-index: 15;
+   top: 15pc;
+}
+.garage:hover {
+   background-color: #1b1b1b;
+}
+.cargarage {
+   font-size: 2pc;
+   display: flex;
+   color: black;
+}
+.cargarage:hover {
+   color: white;
+}
+.bluecarselection {
+   position: absolute;
+   display: flex;
+   top: 0;
+}
+.greencarselection {
+   position: absolute;
+   display: flex;
+   top: 3pc;
+   left: 22pc;
+}
+.whitecarselection {
+   position: absolute;
+   display: flex;
+   top: 0;
+   left: 42.8pc;
+}
+.yellowcarselection {
+   position: absolute;
+   display: flex;
+   top: 5pc;
+   left: 63pc;
+}
+.bluecarselect {
+   width: 20pc;
+   display: flex;
+   position: relative;
+}
+.greencarselect {
+   width: 20pc;
+   display: flex;
+   position: relative;
+}
+.whitecarselect {
+   width: 20pc;
+   display: flex;
+   position: relative;
+}
+.yellowcarselect {
+   width: 21pc;
+   display: flex;
+   position: relative;
+}
+.text4 {
+   font-weight: bold;
+   font-size: 1pc;
+   line-height: 5px;
+   text-align: left;
+   position: absolute;
+   left: 64.7pc;
+   top: 13pc;
+   display: inline-block;
+}
+.text3 {
+   font-weight: bold;
+   font-size: 1pc;
+   line-height: 5px;
+   text-align: left;
+   position: absolute;
+   left: 43.3pc;
+   top: 13pc;
+   display: inline-block;
+}
+.text2 {
+   font-weight: bold;
+   font-size: 1pc;
+   line-height: 5px;
+   text-align: left;
+   position: absolute;
+   left: 22.5pc;
+   top: 13pc;
+   display: inline-block;
+}
+.text {
+   font-weight: bold;
+   font-size: 1pc;
+   line-height: 5px;
+   text-align: left;
+   position: absolute;
+   left: 1.5pc;
+   display: inline-block;
+   top: 13pc;
+}
+.spd, .acc, .whl, .hand {
+   width: 12pc;
+   height: 7px;
+   background-color: grey;
+   position: absolute;
+   top: 15px;
+   left: 6pc;
+}
+.spd3, .acc3, .whl3, .hand3 {
+   width: 12pc;
+   height: 7px;
+   background-color: grey;
+   position: absolute;
+   top: 15px;
+   left: 6pc;
+}
+.spd5, .acc5, .whl5, .hand5 {
+   width: 12pc;
+   height: 7px;
+   background-color: grey;
+   position: absolute;
+   top: 15px;
+   left: 6pc;
+}
+.spd7, .acc7, .whl7, .hand7 {
+   width: 12pc;
+   height: 7px;
+   background-color: grey;
+   position: absolute;
+   top: 15px;
+   left: 6pc;
+}
+.acc {
+   top: 2.2pc;
+   left: 6pc;
+}
+.acc3 {
+   top: 2.2pc;
+   left: 6pc;
+}
+.acc5 {
+   top: 2.2pc;
+   left: 6pc;
+}
+.acc7 {
+   top: 2.2pc;
+   left: 6pc;
+}
+.whl {
+   top: 3.5pc;
+   left: 6pc;
+}
+.whl3 {
+   top: 3.5pc;
+   left: 6pc;
+}
+.whl5 {
+   top: 4.8pc;
+   left: 6pc;
+}
+.whl7 {
+   top: 4.8pc;
+   left: 6pc;
+}
+.hand {
+   top: 4.8pc;
+   left: 6pc;
+}
+.hand3 {
+   top: 4.8pc;
+   left: 6pc;
+}
+.hand5 {
+   top: 3.5pc;
+   left: 6pc;
+}
+.hand7 {
+   top: 3.5pc;
+   left: 6pc;
+}
+.spd2, .acc2, .whl2, .hand2 {
+   height: 100%;
+   background-color: green;
+   position: absolute;
+}
+.spd4, .acc4, .whl4, .hand4 {
+   height: 100%;
+   background-color: green;
+   position: absolute;
+}
+.spd6, .acc6, .whl6, .hand6 {
+   height: 100%;
+   background-color: green;
+   position: absolute;
+}
+.spd8, .acc8, .whl8, .hand8 {
+   height: 100%;
+   background-color: green;
+   position: absolute;
+}
+.spd2 {
+   width: 30%;
+}
+.spd4 {
+   width: 40%;
+}
+.spd6 {
+   width: 50%;
+}
+.spd8 {
+   width: 70%;
+}
+.acc2 {
+   width: 25%;
+}
+.acc4 {
+   width: 27%;
+}
+.acc6 {
+   width: 38%;
+}
+.acc8 {
+   width: 45%;
+}
+.whl2 {
+   width: 31%;
+}
+.whl4 {
+   width: 40%;
+}
+.whl6 {
+   width: 55%;
+}
+.whl8 {
+   width: 81%;
+}
+.hand2 {
+   width: 38%;
+}
+.hand4 {
+   width: 48%;
+}
+.hand6 {
+   width: 70%;
+}
+.hand8 {
+   width: 64%;
+}
+.select, .select2, .select3, .select4 {
+   display: flex;
+   position: absolute;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   background-color: white;
+   border: 5px solid black;
+   border-radius: 50%;
+   width: 3pc;
+   height: 3pc;
+   left: 1.3pc;
+   top: 19pc;
+}
+.select2 {
+   left: 22.3pc;
+   visibility: hidden;
+}
+.select3 {
+   left: 43pc;
+   visibility: hidden;
+}
+.select4 {
+   left: 64.5pc;
+   visibility: hidden;
+}
+.carcash {
+   display: flex;
+   position: absolute;
+   top: 19pc;
+   left: 22.3pc;
+}
+.carcash3 {
+   display: flex;
+   position: absolute;
+   top: 19pc;
+   left: 43pc;
+}
+.carcash5 {
+   display: flex;
+   position: absolute;
+   top: 19pc;
+   left: 64.5pc;
+}
+.cashnum, .cashnum2, .cashnum3 {
+   font-size: 1.5pc;
+   color: black;
+   display: flex;
+   position: absolute;
+   font-family: p;
+   top: -2pc;
+   left: 1.5pc;
+}
+.carcash2, .carcash4, .carcash6 {
+   font-size: 1.5pc;
+   color: white;
+   display: flex;
+   position: absolute;
+   font-family: p;
+   width: 5.3pc;
+   height: 2pc;
+   border: 2px solid #000d47;
+   background-color: #000c8b;
+   border-radius: 5px;
+   top: 1pc;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+.carcash2:hover, .carcash4:hover, .carcash6:hover {
+   background-color: #000d47;
+}
+.buycoin {
+   font-size: 1.2pc;
+   color: white;
+   position: absolute;
+   display: flex;
+   left: 4px;
+}
+.selectcar, .selectcar2, .selectcar3, .selectcar4 {
+   display: flex;
+   position: absolute;
+   font-weight: bolder;
+   font-size: 1.5pc;
+   color: black;
+   -webkit-text-stroke-width: 3px;
+}
+.selectcar2, .selectcar3, .selectcar4 {
+   visibility: hidden;
+}
+.garageback {
+   display: flex;
+   position: fixed;
+   text-align: center;
+   align-items: center;
+   top: 25.5pc;
+   right: 2pc;
+   z-index: 16;
+}
+.backgarage {
+   display: flex;
+   justify-content: center;
+   width: 10pc;
+   height: 2.5pc;
+   color: white;
+   font: 1.8pc p;
+   border-radius: 5px;
+   border: 3px solid #000640;
+   background-color: #000f74;
+}
+.backgarage:hover {
+   background-color: #000640;
+}
+
+.game {
+   background-image: url('../img/flowers.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: repeat-y;
+   position: absolute;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   z-index: 99;
+   overflow: hidden;
+   visibility: hidden;
+}
+.mainroad {
+   position: relative;
+   perspective: 900px;
+   display: flex;
+   top: -6pc;
+   margin-left: 25px;
+}
+.road {
+   background-color: #323232;
+   transform: rotateX(30deg);
+   width: 20pc;
+   height: 45pc;
+   display: flex;
+   position: relative;
+   border: 5px solid black;
+   animation-name: road;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+}
+.line, .line2, .line3, .line4 {
+   width: 5px;
+   height: 10pc;
+   position: relative;
+   background-color: white;
+   display: flex;
+   animation-name: lines;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+.line5, .line6 {
+   width: 5px;
+   height: 10pc;
+   position: relative;
+   background-color: white;
+   display: flex;
+   animation-name: customlines;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+.line {
+   left: 5.7pc;
+}
+.line2 {
+   left: 13pc;
+}
+.line3 {
+   top: 20pc;
+   left: 5pc;
+   width: 4.5px;
+}
+.line4 {
+   top: 20pc;
+   left: 13pc;
+}
+.line5 {
+   left: 4.4pc;
+   top: -100pc;
+}
+.line6 {
+   left: 11.7pc;
+   top: -100pc;
+}
+.bullet {
+   width: 3px;
+   height: 3pc;
+   left: 7.7pc;
+   /*left //left: 1pc;
+   //right //left: 15pc;*/
+   top: 30pc;
+   display: flex;
+   position: relative;
+   background-color: white;
+   animation-name: bullet;
+   animation-duration: 0.7s;
+   border-radius: 50%;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-play-state: paused;
+   visibility: hidden;
+}
+@keyframes bullet{
+   0% {top: 30pc;}
+   100% {top: -5pc;}
+}
+@keyframes road {
+   0% {background-color: #323232;}
+   20% {background-color: #393939;}
+   40% {background-color: #2f2f2f;}
+   60% {background-color: #1d1d1d;}
+   80% {background-color: #2b2b2b;}
+   100% {background-color: #2b2b2b;}
+}
+@keyframes lines {
+   0% {margin-top: -30pc;}
+   100% {margin-top: 40pc;}
+}
+@keyframes customlines {
+   0% {margin-top: -30pc;}
+   100% {margin-top: 200pc;}
+}
+.roadimg {
+   position: absolute;
+   display: flex;
+   left: 7.3pc;
+   bottom: 10pc;
+/* //left //left: 0.5pc;
+   //right //left: 14.7pc;*/
+}
+.roadimg2 {
+   display: flex;
+   position: relative;
+   width: 5pc;
+}
+.oppcars, .oppcars2, .oppcars3 {
+   display: flex;
+   position: absolute;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+.oppcars {
+   top: -65pc;
+   animation-name: oppcars;
+   animation-duration: 10s;
+}
+.oppcars2 {
+   top: -55pc;
+   animation-name: oppcars2;
+   animation-duration: 10s;
+}
+.oppcars3 {
+   top: -75pc;
+   animation-name: oppcars3;
+   animation-duration: 10s;
+}
+.opp1, .opp2, .opp3 {
+   display: flex;
+   position: absolute;
+   visibility: hidden;
+}
+.opp4, .opp5, .opp6 {
+   left: 7.2pc;
+   display: flex;
+   position: absolute;
+   visibility: hidden;
+}
+.opp7, .opp8, .opp9 {
+   left: 14.7pc;
+   display: flex;
+   position: absolute;
+   visibility: hidden;
+}
+@keyframes oppcars {
+   0% {top: -60pc;}
+   20% {}
+   40% {}
+   60% {}
+   80% {}
+   100% {top: 85pc;}
+}
+@keyframes oppcars2 {
+   0% {top: -50pc;}
+   20% {}
+   40% {}
+   60% {}
+   80% {}
+   100% {top: 130pc;}
+}
+@keyframes oppcars3 {
+   0% {top: -70pc;}
+   20% {}
+   40% {}
+   60% {}
+   80% {}
+   100% {top: 170pc;}
+}
+.opp1 {
+   top: -2pc;
+   left: 0.1pc;
+   width: 4.5pc;
+   height: 8pc;
+}
+.opp2 {
+   top: -20pc;
+   width: 4.5pc;
+}
+.opp3 {
+   height: 9pc;
+   width: 5pc;
+   top: -35pc;
+   left: 0.1pc;
+}
+.opp4 {
+   top: -45pc;
+   width: 4.5pc;
+}
+.opp5 {
+   top: -30pc;
+   width: 4.5pc;
+}
+.opp6 {
+   top: -15pc;
+   width: 4.5pc;
+}
+.opp7 {
+   top: -60pc;
+   width: 4.5pc;
+}
+.opp8 {
+   top: -45pc;
+   width: 4.5pc;
+}
+.opp9 {
+   top: -30pc;
+   width: 4.5pc;
+}
+.tools {
+   display: flex;
+   position: absolute;
+}
+.left {
+   left: 2pc;
+   top: 30pc;
+   width: 3pc;
+   height: 3pc;
+   border: 4px solid black;
+   border-radius: 50%;
+   display: flex;
+   position: absolute;
+   background-color: #0d0d0dcc;
+}
+.right {
+   left: 18pc;
+   top: 30pc;
+   width: 3pc;
+   height: 3pc;
+   border: 4px solid black;
+   border-radius: 50%;
+   display: flex;
+   position: absolute;
+   background-color: #0d0d0dcc;
+}
+.center {
+   left: 10pc;
+   top: 30pc;
+   width: 3pc;
+   height: 3pc;
+   border: 4px solid black;
+   border-radius: 50%;
+   display: flex;
+   position: absolute;
+   background-color: #0d0d0dcc;
+}
+.shoot {
+   left: 10pc;
+   top: 26pc;
+   width: 3pc;
+   height: 3pc;
+   border: 4px solid black;
+   border-radius: 50%;
+   display: flex;
+   position: absolute;
+   background-color: #0d0d0dcc;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+.gun {
+   font-size: 1.7pc;
+   color: #8f8f8f;
+}
+.left:hover, .right:hover, .center:hover, .shoot:hover {
+   background-color: #595959cc;
+}
+.quit {
+   position: absolute;
+   display: flex;
+   width: 5pc;
+   height: 1.6pc;
+   font-family: i;
+   font-size: 0.7pc;
+   font-weight: bold;
+   border-radius: 50px;
+   background-color: white;
+   text-align: right;
+   float: right;
+   align-items: center;
+   justify-content: center;
+   margin-left: 6px;
+   margin-top: 6px;
+}
+.quit2 {
+   position: relative;
+   display: flex;
+   left: -10px;
+   width: 20px;
+   height: 20px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: white;
+   box-shadow: 2px 2px 2px grey, -2px -2px 2px grey;
+}
+.xmark {
+   font-weight: bolder;
+}
+.timer {
+   position: absolute;
+   display: flex;
+   width: 4pc;
+   height: 1.6pc;
+   background-color: #ffffff;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   right: 0.5pc;
+   top: 6px;
+}
+.timer p {
+   font: 1pc c;
+   display: flex;
+   font-weight: normal;
+}
+.progress {
+   top: 4pc;
+   left: 0.5pc;
+   width: 2.5pc;
+   height: 13pc;
+   position: absolute;
+   border: 3px solid #131313;
+   border-radius: 20pc 20pc 20pc 20pc;
+   background-color: #ffffffdd;
+   justify-content: center;
+}
+.pro {
+   width: 100%;
+   height: 0;
+   bottom: 0;
+   display: flex;
+   position: absolute;
+   transition-duration: 2s;
+   border-radius: 0 0 20pc 20pc;
+   background-color: #005093;
+   animation-name: pro;
+   animation-duration: 2s;
+   animation-play-state: paused;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+@keyframes pro {
+   0% {background-color: #005093;}
+   20% {background-color: #0057a1;}
+   40% {background-color: #0079de;}
+   60% {background-color: #0f5c9e;}
+   80% {background-color: #0b416e;}
+   100% {background-color: #11416a;}
+}
+.problur {
+   width: 30%;
+   height: 0;
+   top: 90%;
+   margin-left: 15px;
+   display: flex;
+   text-align: center;
+   border-radius: 50%;
+   position: absolute;
+   box-shadow: 1px 1px 10px 10px #009dff, -1px -1px 10px 10px #009dff;
+   background-color: #009dff;
+   visibility: hidden;
+   animation-name: problur;
+   animation-play-state: paused;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+@keyframes problur {
+   0% {top: 90%;}
+   100% {top: 8%;}
+}
+.airplane {
+   width: 100%;
+   height: 10pc;
+   /* // top //top: -40%;*/
+   top: 110%;
+   left: 0;
+   border-radius: 20pc;
+   position: absolute;
+   background-color: #191919;
+   box-shadow: 5px 5px 10px 10px #191919db, -5px -5px 10px 10px #191919db;
+}

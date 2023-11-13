@@ -1,0 +1,72 @@
+@font-face {
+   font-family: a;
+   src: url("webfonts/AlumniSansCollegiateOne-Regular.ttf");
+}
+@font-face {
+   font-family: b;
+   src: url("webfonts/BarlowCondensed-Black.ttf");
+}
+@font-face {
+   font-family: c; 
+   src: url("webfonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+   font-family: d;
+   src: url("webfonts/DancingScript-Medium.ttf");
+}
+@font-face {
+   font-family: e;
+   src: url("webfonts/DynaPuff-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+   font-family: f;
+   src: url("webfonts/FjallaOne-Regular.ttf");
+}
+@font-face {
+   font-family: g;
+   src: url("webfonts/Lobster-Regular.ttf");
+}
+@font-face {
+   font-family: h;
+   src: url("webfonts/Merriweather-Black.ttf");
+}
+@font-face {
+   font-family: i;
+   src: url("webfonts/Pacifico-Regular.ttf");
+}
+@font-face {
+   font-family: j;
+   src: url("webfonts/PTSans-Bold.ttf");
+}
+@font-face {
+   font-family: k;
+   src: url("webfonts/PTSansNarrow-Bold.ttf");
+}
+@font-face {
+   font-family: l;
+   src: url("webfonts/RubikDirt-Regular.ttf");
+}
+@font-face {
+   font-family: m;
+   src: url("webfonts/RubikDistressed-Regular.ttf");
+}
+@font-face {
+   font-family: n;
+   src: url("webfonts/RubikMaze-Regular.ttf");
+}
+@font-face {
+   font-family: o;
+   src: url("webfonts/Silkscreen-Bold.ttf");
+}
+@font-face {
+   font-family: p;
+   src: url("webfonts/Teko-Medium.ttf");
+}
+@font-face {
+   font-family:q ;
+   src: url("webfonts/VarelaRound-Regular.ttf");
+}
+@font-face {
+   font-family: r;
+   src: url("webfonts/YanoneKaffeesatz-Bold.ttf");
+}
